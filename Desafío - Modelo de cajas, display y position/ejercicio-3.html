@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        .row-1, .row-2 {
+            display: block;
+        }
+
+        .flag {
+            display: inline-block;
+        }
+
+        .flag p {
+            margin: 0.5rem;
+        }
+
+        .espana {
+            width: 300px;
+            height: 200px;
+            margin: 0.5rem;
+            border: 1px solid #000;
+        }
+
+        .espana .color-1 {
+            background-color: red;
+            height: 30%;
+        }
+
+        .espana .color-2 {
+            background-color: yellow;
+            height: 40%;
+        }
+
+        .dinamarca {
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            margin: 0.5rem;
+            position: relative;
+            border: 1px solid #000;
+        }
+
+        .dinamarca .s-1 {
+            background-color: red;
+            width: 30%;
+            height: 45%;
+        }
+
+        .dinamarca .s-2 {
+            background-color: red;
+            width: 30%;
+            height: 45%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .dinamarca .s-3 {
+            background-color: red;
+            width: 63%;
+            height: 45%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .dinamarca .s-4 {
+            background-color: red;
+            width: 63%;
+            height: 45%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .emiratos {
+            width: 300px;
+            height: 200px;
+            background-color: #bc8f8f;
+            margin: 0.5rem;
+            border: 1px solid #000;
+        }
+
+        .emiratos .colors-left {
+            background-color: red;
+            display: inline;
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+
+        .emiratos .colors-right {
+            height: 100%;
+            width: 75%;
+            display: inline;
+        }
+
+        .emiratos .colors-right .green {
+            background-color: green;
+            height: 33.33%;
+            width: 100%;
+        }
+
+        .emiratos .colors-right .white {
+            background-color: white;
+            height: 33.33%;
+            width: 100%;
+        }
+        .emiratos .colors-right .black {
+            background-color: black;
+            height: 33.33%;
+            width: 100%;
+        }
+
+        .japon {
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            margin: 0.5rem;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        .japon .circle {
+            background-color: red;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            /* left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); */
+        }
+
+    </style>
+</head>
+<body>
+    <section class="row-1">
+        <div class="flag">
+        <div class="espana">
+            <div class="color-1"></div>
+            <div class="color-2"></div>
+            <div class="color-1"></div>
+        </div>
+        <p>España</p>
+    </div>
+
+    <div class="flag">
+        <div class="dinamarca">
+            <div class="s-1"></div>
+            <div class="s-2"></div>
+            <div class="s-3"></div>
+            <div class="s-4"></div>
+        </div>
+        <p>Dinamarca</p>
+    </div>
+    </section>
+
+    <section class="row-2">
+        <div class="flag">
+        <div class="emiratos">
+            <div class="colors-left"></div>
+            <div class="colors-right">
+                <div class="green"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+            </div>
+        </div>
+        <p>Emiratos Árabes</p>
+        </div>
+
+        <div class="flag">
+        <div class="japon">
+            <div class="circle"></div>
+        </div>
+        <p>Japón</p>
+    </div>
+    </section>
+    
+</body>
+</html>
